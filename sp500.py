@@ -5,8 +5,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import yfinance as yf
-
-
+import chart_studio
+username = 'jnonyx'
+api_key = 'VOp5YDDGckKiTc985CRP'
+chart_studio.tools.set_credentials_file(username = username, api_key=api_key)
 # Web scraping of S&P 500 data
 #
 
@@ -93,13 +95,16 @@ fig.update_layout(annotations=annotations)
 
 fig.show()
 
-fig = go.Figure()
-fig = make_subplots(rows=5, cols=1)
-fig.add_trace(go.Scatter(x=x_data, y=y_data[0], mode='lines', name=labels[0]), row=1, col=1)
-fig.add_trace(go.Scatter(x=x_data, y=y_data[1], mode='lines', name=labels[1]), row=2, col=1)
-fig.add_trace(go.Scatter(x=x_data, y=y_data[2], mode='lines', name=labels[2]), row=3, col=1)
-fig.add_trace(go.Scatter(x=x_data, y=y_data[3], mode='lines', name=labels[3]), row=4, col=1)
-fig.add_trace(go.Scatter(x=x_data, y=y_data[4], mode='lines', name=labels[4]), row=5, col=1)
+#fig = go.Figure()
+#fig = make_subplots(rows=5, cols=1)
+#fig.add_trace(go.Scatter(x=x_data, y=y_data[0], mode='lines', name=labels[0]), row=1, col=1)
+#fig.add_trace(go.Scatter(x=x_data, y=y_data[1], mode='lines', name=labels[1]), row=2, col=1)
+#fig.add_trace(go.Scatter(x=x_data, y=y_data[2], mode='lines', name=labels[2]), row=3, col=1)
+#fig.add_trace(go.Scatter(x=x_data, y=y_data[3], mode='lines', name=labels[3]), row=4, col=1)
+#fig.add_trace(go.Scatter(x=x_data, y=y_data[4], mode='lines', name=labels[4]), row=5, col=1)
 
-fig.update_layout(height=1600, width=700)
-fig.show()
+#fig.update_layout(height=1600, width=700)
+#fig.show()
+
+test = fig
+
