@@ -19,10 +19,12 @@ def load_data():
 df = load_data()
 sector = df.groupby('GICS Sector')
 
-start_date = input("Enter Start Date in the yyyy-mm-dd format: ")
+#start_date = input("Enter Start Date in the yyyy-mm-dd format: ")
+start_date = '2019-03-13'
 print("Start Date is " + start_date)
 
-end_date = input("Enter End Date in the yyyy-mm-dd format: ")
+end_date = '2019-08-13'
+#end_date = input("Enter End Date in the yyyy-mm-dd format: ")
 print("End Date is " + end_date)
 
 
